@@ -1,11 +1,18 @@
 
 
-// $(".burger_menu").hide();
+// al passare del mouse scende la tendina
 
-$(".list_style").mouseenter(function(){
-  // $(".burger_menu").slideDown();
-  $(this).children(".burger_menu").slideDown();
+$('.right').mouseenter(function()
+{
+
+  $('.list_style li').removeClass('dropdown_menu');
+  
+  $(this).children('.list_style li').addClass('dropdown_menu');
 });
-$(".list_style").mouseleave(function(){
-  $(this).children(".dropdown-menu").slideUp();
+
+// al togliere il mouse dalla sezione la tendina scompare
+
+$('.right').mouseleave(function() {
+
+  $('.list_style li').removeClass('dropdown_menu');
 });

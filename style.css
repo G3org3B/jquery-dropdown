@@ -73,7 +73,7 @@ a:hover {
   width: 50px;
   height: 50px;
 }
-.burger_menu {
+.dropdown_menu {
   display: none;
   width: 40%;
   height: 60%;
@@ -85,6 +85,9 @@ a:hover {
   border: 5px solid white;
   border-radius: 10px;
   font-size: 25px;
+}
+.list_style_DropD {
+  display: block;
 }
 
 @media all and (max-width: 1048px) {
